@@ -1,0 +1,4 @@
+prometheus-client>=0.23.1
+pysnmp>=7.1.22
+pysnmpcrypto>=0.1.0
+pyyaml>=6.0.3

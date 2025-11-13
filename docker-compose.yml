@@ -1,0 +1,13 @@
+services:
+  dptech_exporter:
+    container_name: dptech_exporter
+    image: astral/uv:python3.12-bookworm-slim
+    restart: always
+    ports:
+      - "9091:9091"
+    volumes:
+      - .:/app
+      - ./dptech_exporter.yml:/etc/dptech_exporter.yml
+    working_dir: /app
+    command: uv run --link-mode=copy dptech_exporter.py
+

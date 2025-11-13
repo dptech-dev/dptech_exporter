@@ -1,0 +1,29 @@
+### snmp access template
+snmp_templates:
+  - name: default
+### for snmp v2c, snmp version default is v2c
+#    version: v2c
+    community: public_default
+### for snmp v3
+### auth_protocol: none md5 sha
+### priv_protocol: none des aes
+#    version: v3
+#    user: user
+#    auth_protocol: md5
+#    auth_key: key
+#    priv_protocol: des
+#    priv_key: key
+### snmp params
+### timeout: default 3s
+### retry: 1 times
+#    timeout: 3
+#    retry: 1
+
+targets:
+### target ip
+  - host: 10.23.13.99
+### set target sysname, default read by snmp
+    sysname: core-switch
+### snmp access template, default use snmp_templates.default
+    snmp: default
+  - host: 10.23.50.200
