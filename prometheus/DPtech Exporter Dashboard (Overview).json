@@ -1,4 +1,65 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_PROMETHEUS",
+      "label": "prometheus",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "prometheus",
+      "pluginName": "Prometheus"
+    }
+  ],
+  "__elements": {},
+  "__requires": [
+    {
+      "type": "panel",
+      "id": "barchart",
+      "name": "Bar chart",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "bargauge",
+      "name": "Bar gauge",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "gauge",
+      "name": "Gauge",
+      "version": ""
+    },
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "12.2.1"
+    },
+    {
+      "type": "panel",
+      "id": "piechart",
+      "name": "Pie chart",
+      "version": ""
+    },
+    {
+      "type": "datasource",
+      "id": "prometheus",
+      "name": "Prometheus",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "table",
+      "name": "Table",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "timeseries",
+      "name": "Time series",
+      "version": ""
+    }
+  ],
   "annotations": {
     "list": [
       {
@@ -19,7 +80,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 3,
+  "id": null,
   "links": [],
   "panels": [
     {
@@ -38,7 +99,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "description": "",
       "fieldConfig": {
@@ -341,7 +402,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -356,7 +417,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -371,7 +432,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -386,7 +447,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -401,7 +462,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -416,7 +477,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -431,7 +492,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -446,7 +507,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -461,7 +522,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -562,7 +623,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -662,7 +723,11 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Status",
@@ -671,7 +736,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -732,7 +797,11 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Models",
@@ -741,7 +810,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -813,7 +882,11 @@
           "instant": true,
           "legendFormat": "{{host}} ({{sysname}})",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 CPU Usage",
@@ -822,7 +895,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -894,7 +967,11 @@
           "instant": true,
           "legendFormat": "{{host}} ({{sysname}})",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Memory Usage",
@@ -903,7 +980,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -975,7 +1052,11 @@
           "instant": true,
           "legendFormat": "{{host}} ({{sysname}})",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 CPU Temperature",
@@ -984,7 +1065,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1056,7 +1137,11 @@
           "instant": true,
           "legendFormat": "{{host}} ({{sysname}})",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Mainboard Temperature",
@@ -1064,7 +1149,8 @@
     },
     {
       "datasource": {
-        "uid": "ef2kpssiiax34a"
+        "type": "prometheus",
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1152,12 +1238,16 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1230,7 +1320,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1428,12 +1518,16 @@
           "interval": "",
           "legendFormat": "__auto",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "count(dptech_card_cpu_usage_percent{host=~\"$host\", sysname=~\"$sysname\", model=~\"$model\"})",
@@ -1446,7 +1540,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "count(dptech_if_status{host=~\"$host\", sysname=~\"$sysname\", model=~\"$model\"})",
@@ -1476,7 +1570,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1535,7 +1629,11 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Models",
@@ -1544,7 +1642,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1606,7 +1704,11 @@
           "instant": true,
           "legendFormat": "{{host}} slot {{slot}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 CPU Usage",
@@ -1615,7 +1717,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1686,7 +1788,11 @@
           "instant": true,
           "legendFormat": "{{host}} slot {{slot}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Memory Usage",
@@ -1695,7 +1801,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1781,7 +1887,11 @@
           "instant": true,
           "legendFormat": "{{host}} slot {{slot}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 CPU Temperature",
@@ -1790,7 +1900,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1876,7 +1986,11 @@
           "instant": true,
           "legendFormat": "{{host}} slot {{slot}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Card Temperature",
@@ -1885,7 +1999,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1947,7 +2061,11 @@
           "instant": true,
           "legendFormat": "{{host}} slot {{slot}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 LCPU Usage",
@@ -1956,7 +2074,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2027,7 +2145,11 @@
           "instant": true,
           "legendFormat": "{{host}} slot {{slot}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 LMEM Usage",
@@ -2049,7 +2171,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2150,7 +2272,11 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Type",
@@ -2159,7 +2285,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2221,7 +2347,11 @@
           "instant": true,
           "legendFormat": "{{host}} {{ifname}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Inbound Usage",
@@ -2230,7 +2360,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2292,7 +2422,11 @@
           "instant": true,
           "legendFormat": "{{host}} {{ifname}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Outbound Usage",
@@ -2301,7 +2435,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2401,7 +2535,11 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Status",
@@ -2410,7 +2548,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2472,7 +2610,11 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Speed(Mbps)",
@@ -2481,7 +2623,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2568,12 +2710,16 @@
           "expr": "sum(dptech_if_in_bps{host=~\"$host\", sysname=~\"$sysname\", model=~\"$model\", iftype=~\"$iftype\"})",
           "legendFormat": "Inbound",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "sum(dptech_if_out_bps{host=~\"$host\", sysname=~\"$sysname\", model=~\"$model\", iftype=~\"$iftype\"})",
@@ -2590,7 +2736,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2651,7 +2797,11 @@
           "instant": true,
           "legendFormat": "{{host}} {{ifname}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Inbound Current Speed",
@@ -2660,7 +2810,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2721,7 +2871,11 @@
           "instant": true,
           "legendFormat": "{{host}} {{ifname}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Outbound Current Speed",
@@ -2730,7 +2884,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2816,12 +2970,16 @@
           "expr": "sum(dptech_if_in_discards_pps{host=~\"$host\", sysname=~\"$sysname\", model=~\"$model\", iftype=~\"$iftype\"})",
           "legendFormat": "Inbound Discards",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "sum(dptech_if_out_discards_pps{host=~\"$host\", sysname=~\"$sysname\", model=~\"$model\", iftype=~\"$iftype\"})",
@@ -2834,7 +2992,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "sum(dptech_if_in_errors_pps{host=~\"$host\", sysname=~\"$sysname\", model=~\"$model\", iftype=~\"$iftype\"})",
@@ -2847,7 +3005,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "sum(dptech_if_out_errors_pps{host=~\"$host\", sysname=~\"$sysname\", model=~\"$model\", iftype=~\"$iftype\"})",
@@ -2864,7 +3022,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2934,7 +3092,11 @@
           "instant": true,
           "legendFormat": "{{host}} {{ifname}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Inbound Discards",
@@ -2943,7 +3105,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3013,7 +3175,11 @@
           "instant": true,
           "legendFormat": "{{host}} {{ifname}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Outbound Discards",
@@ -3022,7 +3188,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3092,7 +3258,11 @@
           "instant": true,
           "legendFormat": "{{host}} {{ifname}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Inbound Errors",
@@ -3101,7 +3271,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3171,14 +3341,17 @@
           "instant": true,
           "legendFormat": "{{host}} {{ifname}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Outbound Errors",
       "type": "bargauge"
     }
   ],
-  "preload": false,
   "refresh": "1m",
   "schemaVersion": 42,
   "tags": [
@@ -3190,10 +3363,7 @@
       {
         "allValue": ".*",
         "allowCustomValue": false,
-        "current": {
-          "text": "All",
-          "value": "$__all"
-        },
+        "current": {},
         "definition": "label_values(dptech_snmp_status,host)",
         "description": "",
         "includeAll": true,
@@ -3213,10 +3383,7 @@
       {
         "allValue": ".*",
         "allowCustomValue": false,
-        "current": {
-          "text": "All",
-          "value": "$__all"
-        },
+        "current": {},
         "definition": "label_values(dptech_snmp_status,sysname)",
         "includeAll": true,
         "label": "Sysname",
@@ -3233,10 +3400,7 @@
         "type": "query"
       },
       {
-        "current": {
-          "text": "2",
-          "value": "2"
-        },
+        "current": {},
         "definition": "query_result(count(dptech_snmp_status{host=~\"$host\", sysname=~\"$sysname\", model=~\"$model\"}))",
         "description": "",
         "hide": 2,
@@ -3255,10 +3419,7 @@
       {
         "allValue": ".*",
         "allowCustomValue": false,
-        "current": {
-          "text": "All",
-          "value": "$__all"
-        },
+        "current": {},
         "definition": "label_values(dptech_snmp_status,model)",
         "includeAll": true,
         "label": "Model",
@@ -3276,10 +3437,7 @@
       {
         "allValue": ".*",
         "allowCustomValue": false,
-        "current": {
-          "text": "All",
-          "value": "$__all"
-        },
+        "current": {},
         "definition": "label_values(dptech_card_cpu_usage_percent,card)",
         "includeAll": true,
         "label": "Card",
@@ -3297,10 +3455,7 @@
       {
         "allValue": ".*",
         "allowCustomValue": false,
-        "current": {
-          "text": "All",
-          "value": "$__all"
-        },
+        "current": {},
         "definition": "label_values(dptech_if_status,iftype)",
         "includeAll": true,
         "label": "Iftype",
@@ -3325,5 +3480,6 @@
   "timezone": "browser",
   "title": "DPtech Exporter Dashboard (Overview)",
   "uid": "adk56wb",
-  "version": 100
+  "version": 100,
+  "weekStart": ""
 }

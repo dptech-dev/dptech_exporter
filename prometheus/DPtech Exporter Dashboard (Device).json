@@ -1,4 +1,71 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_PROMETHEUS",
+      "label": "prometheus",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "prometheus",
+      "pluginName": "Prometheus"
+    }
+  ],
+  "__elements": {},
+  "__requires": [
+    {
+      "type": "panel",
+      "id": "bargauge",
+      "name": "Bar gauge",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "gauge",
+      "name": "Gauge",
+      "version": ""
+    },
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "12.2.1"
+    },
+    {
+      "type": "panel",
+      "id": "piechart",
+      "name": "Pie chart",
+      "version": ""
+    },
+    {
+      "type": "datasource",
+      "id": "prometheus",
+      "name": "Prometheus",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "stat",
+      "name": "Stat",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "table",
+      "name": "Table",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "text",
+      "name": "Text",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "timeseries",
+      "name": "Time series",
+      "version": ""
+    }
+  ],
   "annotations": {
     "list": [
       {
@@ -19,7 +86,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 5,
+  "id": null,
   "links": [],
   "panels": [
     {
@@ -38,7 +105,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -98,7 +165,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -116,7 +183,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -176,7 +243,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -194,7 +261,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -254,7 +321,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -272,7 +339,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -332,7 +399,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -350,7 +417,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -415,7 +482,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -431,10 +498,6 @@
       "type": "stat"
     },
     {
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
       "gridPos": {
         "h": 8,
         "w": 4,
@@ -458,7 +521,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -508,7 +571,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -526,7 +589,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -575,7 +638,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -593,7 +656,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -680,7 +743,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -694,7 +757,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "dptech_memory_usage_percent{host=~\"$host\"}",
@@ -711,7 +774,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -798,7 +861,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -812,7 +875,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "dptech_mainboard_temperature_degree{host=~\"$host\"}",
@@ -829,7 +892,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -878,7 +941,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -896,7 +959,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -945,7 +1008,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -961,10 +1024,6 @@
       "type": "stat"
     },
     {
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
       "gridPos": {
         "h": 4,
         "w": 4,
@@ -988,7 +1047,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1037,7 +1096,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1055,7 +1114,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1104,7 +1163,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1120,10 +1179,6 @@
       "type": "stat"
     },
     {
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
       "gridPos": {
         "h": 2,
         "w": 4,
@@ -1160,7 +1215,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1524,12 +1579,16 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1544,7 +1603,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1559,7 +1618,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1574,7 +1633,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1589,7 +1648,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1658,7 +1717,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1747,12 +1806,16 @@
           "expr": "dptech_card_cpu_usage_percent{host=\"$host\", card=~\"$card\"}>0",
           "legendFormat": "Slot {{slot}}: {{card}} CPU",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "dptech_card_lcpu_usage_percent{host=\"$host\", card=~\"$card\"}>0",
@@ -1769,7 +1832,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1858,12 +1921,16 @@
           "expr": "dptech_card_memory_usage_percent{host=\"$host\", card=~\"$card\"}>0",
           "legendFormat": "Slot {{slot}}: {{card}} Memory",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "dptech_card_lmem_usage_percent{host=\"$host\", card=~\"$card\"}>0",
@@ -1880,7 +1947,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1969,7 +2036,11 @@
           "expr": "dptech_card_cpu_temperature_degree{host=\"$host\", card=~\"$card\"}>0",
           "legendFormat": "Slot {{slot}}: {{card}} CPU",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "CPU Temperature",
@@ -1978,7 +2049,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2067,7 +2138,11 @@
           "expr": "dptech_card_temperature_degree{host=\"$host\", card=~\"$card\"}>0",
           "legendFormat": "Slot {{slot}}: {{card}} CPU",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Card Temperature",
@@ -2089,7 +2164,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2145,7 +2220,11 @@
           "expr": "count(dptech_if_status{host=\"$host\", iftype=~\"$iftype\"}) by (iftype)",
           "legendFormat": "__auto",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Types",
@@ -2154,7 +2233,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2216,7 +2295,11 @@
           "instant": true,
           "legendFormat": "{{host}} {{ifname}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Inbound Usage",
@@ -2225,7 +2308,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2287,7 +2370,11 @@
           "instant": true,
           "legendFormat": "{{host}} {{ifname}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Outbound Usage",
@@ -2296,7 +2383,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2392,7 +2479,11 @@
           "expr": "count_values(\"status\", dptech_if_status{host=\"$host\", iftype=~\"$iftype\"})",
           "legendFormat": "__auto",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Status",
@@ -2401,7 +2492,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2463,7 +2554,11 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Speed(Mbps)",
@@ -2472,7 +2567,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2563,12 +2658,16 @@
           "expr": "sum(dptech_if_in_bps{host=\"$host\", iftype=~\"$iftype\"})",
           "legendFormat": "Inbound",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "sum(dptech_if_out_bps{host=\"$host\", iftype=~\"$iftype\"})",
@@ -2585,7 +2684,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2667,12 +2766,16 @@
           "expr": "sum(dptech_if_in_discards_pps{host=\"$host\", iftype=~\"$iftype\"})",
           "legendFormat": "Inbound Discards",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "sum(dptech_if_out_discards_pps{host=\"$host\", iftype=~\"$iftype\"})",
@@ -2685,7 +2788,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "sum(dptech_if_in_errors_pps{host=\"$host\", iftype=~\"$iftype\"})",
@@ -2698,7 +2801,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "sum(dptech_if_out_errors_pps{host=\"$host\", iftype=~\"$iftype\"})",
@@ -2715,7 +2818,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2809,7 +2912,11 @@
           "instant": false,
           "legendFormat": "{{ifname}}",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Inbound Traffic",
@@ -2818,7 +2925,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2912,7 +3019,11 @@
           "instant": false,
           "legendFormat": "{{ifname}}",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Outbound Traffic",
@@ -2921,7 +3032,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3015,7 +3126,11 @@
           "instant": false,
           "legendFormat": "{{ifname}}",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Inbound Discards",
@@ -3024,7 +3139,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3118,7 +3233,11 @@
           "instant": false,
           "legendFormat": "{{ifname}}",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Outbound Discards",
@@ -3127,7 +3246,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3221,7 +3340,11 @@
           "instant": false,
           "legendFormat": "{{ifname}}",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Inbound Errors",
@@ -3230,7 +3353,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3324,7 +3447,11 @@
           "instant": false,
           "legendFormat": "{{ifname}}",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Top5 Outbound Errors",
@@ -3346,7 +3473,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3420,7 +3547,11 @@
           "instant": true,
           "legendFormat": "Status",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Status",
@@ -3429,7 +3560,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3487,7 +3618,11 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Ifdescr",
@@ -3496,7 +3631,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3554,7 +3689,11 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Iftype",
@@ -3563,7 +3702,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3623,7 +3762,11 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Speed",
@@ -3632,7 +3775,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3692,7 +3835,11 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Current Speed(Inbound)",
@@ -3701,7 +3848,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3761,7 +3908,11 @@
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         }
       ],
       "title": "Current Speed(Outbound)",
@@ -3770,7 +3921,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3862,12 +4013,16 @@
           "expr": "dptech_if_in_usage_percent{host=\"$host\", ifname=\"$ifname\"}>0",
           "legendFormat": "Inbound",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "dptech_if_out_usage_percent{host=\"$host\", ifname=\"$ifname\"}>0",
@@ -3884,7 +4039,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -4040,12 +4195,16 @@
           "expr": "dptech_if_in_bps{host=\"$host\", ifname=\"$ifname\"}>0",
           "legendFormat": "Current Speed",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "dptech_if_in_discards_pps{host=\"$host\", ifname=\"$ifname\"}>0",
@@ -4058,7 +4217,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "dptech_if_in_errors_pps{host=\"$host\", ifname=\"$ifname\"}>0",
@@ -4075,7 +4234,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef2kpssiiax34a"
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -4231,12 +4390,16 @@
           "expr": "dptech_if_out_bps{host=\"$host\", ifname=\"$ifname\"}>0",
           "legendFormat": "Current Speed",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          }
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "dptech_if_out_discards_pps{host=\"$host\", ifname=\"$ifname\"}>0",
@@ -4249,7 +4412,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef2kpssiiax34a"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "dptech_if_out_errors_pps{host=\"$host\", ifname=\"$ifname\"}>0",
@@ -4264,7 +4427,6 @@
       "type": "timeseries"
     }
   ],
-  "preload": false,
   "refresh": "5m",
   "schemaVersion": 42,
   "tags": [
@@ -4275,10 +4437,7 @@
     "list": [
       {
         "allowCustomValue": false,
-        "current": {
-          "text": "10.23.13.99",
-          "value": "10.23.13.99"
-        },
+        "current": {},
         "definition": "label_values(dptech_snmp_info,host)",
         "label": "Host",
         "name": "host",
@@ -4294,10 +4453,7 @@
       },
       {
         "allowCustomValue": false,
-        "current": {
-          "text": "DPTECH Conplat software, Version V100R006B01D000P07PATCH09PATCH35, Release S311C013D000P07PATCH09PATCH35\r\nDPX8000-A5-X\r\nCopyright (c) 2008-2025 Hangzhou DPtech Technologies Co.,Ltd. All rights reserved.",
-          "value": "DPTECH Conplat software, Version V100R006B01D000P07PATCH09PATCH35, Release S311C013D000P07PATCH09PATCH35\r\nDPX8000-A5-X\r\nCopyright (c) 2008-2025 Hangzhou DPtech Technologies Co.,Ltd. All rights reserved."
-        },
+        "current": {},
         "definition": "label_values(dptech_snmp_info{host=\"$host\"},descr)",
         "hide": 2,
         "label": "Descr",
@@ -4314,10 +4470,7 @@
       },
       {
         "allowCustomValue": false,
-        "current": {
-          "text": "AAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaa",
-          "value": "AAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaa"
-        },
+        "current": {},
         "definition": "label_values(dptech_snmp_info{host=\"$host\"},location)",
         "hide": 2,
         "label": "Location",
@@ -4334,10 +4487,7 @@
       },
       {
         "allowCustomValue": false,
-        "current": {
-          "text": "admin@mail.com",
-          "value": "admin@mail.com"
-        },
+        "current": {},
         "definition": "label_values(dptech_snmp_info{host=\"$host\"},contact)",
         "hide": 2,
         "label": "Contact",
@@ -4354,10 +4504,7 @@
       },
       {
         "allowCustomValue": false,
-        "current": {
-          "text": "core-switch",
-          "value": "core-switch"
-        },
+        "current": {},
         "definition": "label_values(dptech_snmp_info{host=\"$host\"},sysname)",
         "hide": 2,
         "label": "Sysname",
@@ -4374,10 +4521,7 @@
       },
       {
         "allowCustomValue": false,
-        "current": {
-          "text": "DPX8000-A5-X",
-          "value": "DPX8000-A5-X"
-        },
+        "current": {},
         "definition": "label_values(dptech_snmp_info{host=\"$host\"},model)",
         "hide": 2,
         "label": "Model",
@@ -4394,10 +4538,7 @@
       },
       {
         "allowCustomValue": false,
-        "current": {
-          "text": "3",
-          "value": "3"
-        },
+        "current": {},
         "definition": "query_result(count(dptech_card_cpu_usage_percent{host=\"$host\",card=~\"$card\"}))",
         "description": "",
         "hide": 2,
@@ -4416,10 +4557,7 @@
       {
         "allValue": ".*",
         "allowCustomValue": false,
-        "current": {
-          "text": "All",
-          "value": "$__all"
-        },
+        "current": {},
         "definition": "label_values(dptech_card_cpu_usage_percent{host=\"$host\"},card)",
         "description": "",
         "includeAll": true,
@@ -4437,10 +4575,7 @@
       },
       {
         "allowCustomValue": false,
-        "current": {
-          "text": "51",
-          "value": "51"
-        },
+        "current": {},
         "definition": "query_result(count(dptech_if_status{host=\"$host\"}))",
         "hide": 2,
         "name": "iftotal",
@@ -4456,10 +4591,7 @@
       },
       {
         "allowCustomValue": false,
-        "current": {
-          "text": "8",
-          "value": "8"
-        },
+        "current": {},
         "definition": "query_result(count(dptech_if_status{host=\"$host\"}>0))",
         "hide": 2,
         "name": "ifused",
@@ -4476,10 +4608,7 @@
       {
         "allValue": ".*",
         "allowCustomValue": false,
-        "current": {
-          "text": "All",
-          "value": "$__all"
-        },
+        "current": {},
         "definition": "label_values(dptech_if_status{host=\"$host\"},iftype)",
         "includeAll": true,
         "label": "Iftype",
@@ -4497,10 +4626,7 @@
       {
         "allValue": ".*",
         "allowCustomValue": false,
-        "current": {
-          "text": "All",
-          "value": "$__all"
-        },
+        "current": {},
         "definition": "label_values(dptech_if_status{host=\"$host\"},ifname)",
         "includeAll": true,
         "label": "Ifname",
@@ -4525,5 +4651,6 @@
   "timezone": "browser",
   "title": "DPtech Exporter Dashboard (Device)",
   "uid": "adc6gwz",
-  "version": 41
+  "version": 41,
+  "weekStart": ""
 }
