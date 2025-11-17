@@ -4,7 +4,7 @@ services:
     image: astral/uv:python3.12-bookworm-slim
     restart: always
     ports:
-      - "9091:9091"
+      - "12000:12000"
     volumes:
       - .:/app
       - ./dptech_exporter.yml:/etc/dptech_exporter.yml

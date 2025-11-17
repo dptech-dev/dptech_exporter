@@ -14,7 +14,7 @@ from prometheus_client import start_http_server
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Prometheus exporter for DPtech network devices')
     parser.add_argument('-f', '--file', default='/etc/dptech_exporter.yml', help='configure file, default: /etc/dptech_exporter.yml')
-    parser.add_argument('-p', '--port', type=int, default=9091, help='http port, default: 9091')
+    parser.add_argument('-p', '--port', type=int, default=12000, help='http port, default: 12000')
     parser.add_argument('-d', '--debug', required=False, action='store_true', help='print exception stack')
     parser.add_argument('-v', '--version', dest='print_version', required=False, action='store_true', help='print version')
     args = parser.parse_args()

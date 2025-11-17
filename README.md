@@ -1,7 +1,7 @@
 # DPtech-Exporter
 Prometheus exporter for DPtech network device. This exporter only need to be installed on one server connected to the device, it will collect all the statistics on the device.
 
-Visit http://localhost:9091/ to verify the exporter is running.
+Visit http://localhost:12000/ to verify the exporter is running.
 
 Grafana dashboard example:
 
@@ -29,7 +29,7 @@ Prometheus collector for DPtech device
 
 optional arguments:
   -h, --help            show this help message and exit
-  --port PORT           Http port, default is 9091
+  --port PORT           Http port, default is 12000
   --file INPUT_FILE
                         Configure file, default is /etc/dptech_exporter.yml
 ```
@@ -168,7 +168,7 @@ Running with an uv container.
 
 ```
 docker run -d --name dptech_exporter --restart unless-stopped \
-    -p 9091:9091 \
+    -p 12000:12000 \
     -v .:/app \
     -v ./dptech_exporter.yml:/etc/dptech_exporter.yml \
     -w /app \
@@ -195,7 +195,7 @@ global:
 scrape_configs:
   - job_name: 'dptech-exporter'
     static_configs:
-      - targets: ['localhost:9091']
+      - targets: ['localhost:12000']
 ```
 
 ## Grafana Dashboard
