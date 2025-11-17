@@ -3,7 +3,12 @@ Prometheus exporter for DPtech network device. This exporter only need to be ins
 
 Visit http://localhost:9091/ to verify the exporter is running.
 
-[Grafana dashboard example](https://grafana.com/grafana/dashboards/11111)
+Grafana dashboard example:
+
+[ID 24399: DPtech Exporter Dashboard (Overview) ](https://grafana.com/grafana/dashboards/24399)
+
+[ID 24400: DPtech Exporter Dashboard (Device) ](https://grafana.com/grafana/dashboards/24400)
+
 
 ## Requirements
 
