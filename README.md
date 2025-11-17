@@ -195,7 +195,9 @@ scrape_configs:
 
 ## Grafana Dashboard
 
-[ID 11111: DPtech Exporter Dashboard](https://grafana.com/grafana/dashboards/11111)
+[ID 24399: DPtech Exporter Dashboard (Overview) ](https://grafana.com/grafana/dashboards/24399)
+
+[ID 24400: DPtech Exporter Dashboard (Device) ](https://grafana.com/grafana/dashboards/24400)
 
 ## Licence
 
